@@ -447,7 +447,13 @@ progress {
     vertical-align : baseline;
 }
 
+.modalsitelink {
+    transition: .5s;
+}
 
+.modalsitelink:hover {
+    letter-spacing: 2px;
+}
 
 .newskillicon {
     width: 50px;
@@ -3776,6 +3782,7 @@ img.u-pull-left {
  * ## modal popup
  * ------------------------------------------------------------------- */
 .modal-popup {
+    max-height: 700px;
     max-width        : 680px;
     background-color : white;
     font-size        : calc(var(--text-size) * 0.9447);
@@ -3849,12 +3856,13 @@ img.u-pull-left {
     position         : absolute;
     top              : var(--vspace-1);
     left             : var(--vspace-1);
+    transition: .5s;
 }
 
 .modal-popup__details:focus,
 .modal-popup__details:hover {
-    background-color : var(--color-body);
-    color            : white;
+    background-color : rgb(155, 155, 155);
+    color            : rgb(10, 10, 10);
 }
 
 /* ------------------------------------------------------------------- 
